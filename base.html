@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beat The Game</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+
+		header {
+			background-color: #2d4059;
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		header h1, nav a {
+			color: #fff;
+			text-shadow: 2px 2px 0 #9b4dca;
+		}
+
+		header h1 {
+			font-size: 48px;
+			margin: 0;
+			padding: 20px 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav li {
+			margin-right: 20px;
+		}
+
+		nav a {
+			font-weight: bold;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			transition: all 0.2s ease-in-out;
+			position: relative;
+			padding: 10px;
+		}
+
+		nav a::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #9b4dca;
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 0.2s ease-in-out;
+			z-index: -1;
+		}
+
+		nav a:hover::before {
+			transform: scaleX(1);
+		}
+
+		nav a:hover {
+			text-shadow: 3px 3px 0 #9b4dca;
+		}
+
+		h1 {
+			font-size: 48px;
+			color: #9b4dca;
+			margin: 0;
+			padding: 20px 0;
+			text-align: center;
+		}
+
+		main {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		h2 {
+			font-size: 36px;
+			color: #2d4059;
+			margin-top: 0;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			color: #333;
+			text-align: center;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #d62828;
+			color: #fff;
+			font-weight: bold;
+			text-decoration: none;
+			border-radius: 5px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.btn:hover {
+			background-color: #9b4dca;
+		}
+
+		footer {
+			background-color: #2d4059;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		footer p {
+			margin: 0;
+			padding: 0;
+		}
+
+		footer a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		footer a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Beat The Game</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#our-crypto">Our Crypto</a></li>
+				<li><a href="#links">Links</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h2 id="home">Καλωσορίσατε Στο Beat The Game</h2>
+		<p> Τι είναι o Beat The Game η αλλιώς BTG ?</p>
+        <p> Ο BTG έχει σκοπό να διδάξει τον καθένα πως το ίντερνετ μπορεί να είναι πηγή εισοδήματος αλλά και τα πολλά ενδιαφέροντά του.  </p>
+		<a href="#services" class="btn">Learn More</a>
+
+		<h2 id="about">About Us</h2>
+        <p> Στον BTG διδάσκουμε πολλά αλλά ο τομέας στον οποίο ειδικευόμαστε είναι το WEB 3.0 – Τrading – Crypto. Το περιεχόμενο που διδάσκουμε θα βρείτε αναλυτικά παρακάτω. </p>
+        <p> Στον BTG θα βρείτε ένα Community το οποίο βοηθάει ο ένας τον άλλον και μοιράζετε τις γνώμες του. </p>
+        <p> Αφου όμως ειδικευόμαστε στο WEB 3.0 Δεν γίνεται να μην έχουμε το δικο μας Crypto Νόμισμα αλλά περισσότερα για αυτό παρακάτω.</p>
+        <p> Τέλος κάτι που πρέπει να ξέρετε για εμάς είναι οτι εχουμε 100% Refund σε όλες τις αγορές membership έαν δεν μάθετε και δεν βγάλετε κέρδος. Περισσότερα για τα memberships μπορείτε να μάθετε στο services</p>
+
+		<h2 id="services">Services</h2>
+		<p>Στον Beat The Game εκτός απο τα Memberships, προσφέρουμε extra προγράμματα και υπηρεσίες.  </p>
+        <p> MEMBERSHIPS </p>
+		<ul>
+			<li>Monthly : 25 €</li>   
+			<li>Referred Monthly : 20 € (Μίας χρήσης) </li>
+			<li>Yearly : 200 € (Εξοικονομήσε 100 €) </li>
+			<li>Lifetime : 500 € (εφ όρου ζωής) </li>
+		</ul>
+        <p> LESSONS PROVIDED</p>
+        <ul>
+            <li>Affiliate Marketing</li>
+            <li>WEB 3.0 & Crypto Introduction</li>
+            <li>WEB 3.0 & Crypto Advanced</li>
+            <li>Trading</li>
+            <li>Earn to Walk</li>
+            <li>Exclusive Crypto Signals</li>
+            <li>New Crypto Project Opportunities</li>
+            <li>And More....</li>
+        </ul>
+        <p> EXCHANGE SERVICES </p>
+        <ul> 
+            <li>PAYPAL → CRYPTO  (Ελάχιστο ποσο 35 €)</li>
+            <li>PAYSAFE → CRYPTO  (Ελάχιστο ποσο 35 €)</li>
+            <li>CRYPTO → CRYPTO  (Ελάχιστο ποσο 5 € )</li>
+            <li>CRYPTO → PAYPAL  (Ελάχιστο ποσο 35 €)</li>
+            <li>CRYPTO → PAYSAFE  (Ελάχιστο ποσο 35 €)</li>
+        </ul>
+        <p>OTHER SERVICES</p>
+        <ul>
+            <li>BUY FOLLOWERS (απο 5 € εως 500 €) </li>
+            <li>BUY A PHONE NUMBER (απο 3 € εως 5 €) </li>
+            <li>BUY A WEBSITE (απο 25 € εως 250 €) </li>
+        </ul>
+        <p> EXTRA OPPORTUNITIES - SOFTWARE</p>
+        <ul>
+            <li>BACCARAT PREDICTOR  (απο 5 € εως 50 € Αναλογα το ειδος membership. OI ΤΙΜΕΣ ΑΝΕΒΑΙΝΟΥΝ ΣΤΑΔΙΑΚΑ)</li>
+            <li>CRYPTO MARKET MANIPULATION ( 15 € απαιτούμενο ποσο πορτοφολιού 25 €. ΤΟ ΠΟΣΟ ΑΝΕΒΑΙΝΕΙ ΣΤΑΔΙΑΚΑ)</li>
+            <li>MORE COMING SOON... .. .</li>
+        </ul>
+
+		<h2 id="our-crypto">Our Crypto</h2>
+		<p>Όπως είπαμε ο BTG ειδικεύεται στον Crypto τομέα οπότε δεν γίνεται να μην έχουμε το δικό μας Crypto Νομισμα. Οπότε ας συζητήσουμε λιγο για τις λεπτομέριες του νομισμάτος μας</p>
+        <p>To BeatTheGameToken η αλλιώς BTGT είναι ένα νόμισμα το οποίο βρισκετε στο Binance Smart Chain. Είναι ενα BEP20 Νομισμα το οποιό προβλέπετε να έχει έως και 25 Beta Versions Μέχρι το Official Token</p>
+        <p>Τώρα που το νόμισμα βρισκετε στο Beta Version έχει μικρο liquidity pool αλλα μετα το μηδενισμό καθε νομισματός το επόμενο version θα έχει έως και 2 φορες μεγαλύτερο liquidity Pool. </p>
+        <p>Πώς μπορείτε να ξέρετε πριν μηδενιστή κάθε νόμισμα ?  </p>
+        <p>Ο μόνος τρόπος να ξερετε πριν γινει ο μηδενισμός κάθε νομισμάτος είναι να είστε Members στον Server. Αλλα με το να είστε member κερδίζετε επίσης να ξέρετε πότε να το αγοράσετε για να βγαλετε εως και 3 φορες την αρχικη επένδυση σας.</p>
+        <p>ΠΛΗΡΟΦΟΡΙΕΣ ΝΟΜΙΣΜΑΤΟΣ</p>
+		<ul>
+            <li>Contact Adress : Coming Soon</li>
+            <li>Price Chart : <a href="#"> Coming Soon</a> </li>
+            <li>Token Marketplace : <a href="#"> Coming Soon</a> </li>
+		</ul>
+
+		<h2 id="links">Our Links</h2>
+		<p>Εδω θα βρείτε καποια Link μας. </p>
+        <p>To Πρώτο Link θα σας πάει εκέι που γινονται τα μαθήματα</p>
+		<ul>
+			<li>Discord : <a href="#">https://discord.gg/r5v5EyfC27</a></li>
+			<li>Tik Tok :<a href="#">BeatTheGame.TikTok</a></li>
+			<li>Twitter :<a href="#">BeatTheGame.Twitter</a></li>
+			<li>WebSite :<a href="#">BeatTheGame.com</a></li>
+		</ul>
+	</main>
+	<footer>
+		<p>&copy; 2023 Beat The Game. All rights reserved. | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+	</footer>
+</body>
+</html>
